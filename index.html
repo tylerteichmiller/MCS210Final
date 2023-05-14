@@ -54,6 +54,9 @@
         <a class="nav-link" href="#is">What MyAI Is</a>
       </li>
       <li class="nav-item">
+        <a class="nav-link" href="#knowl">Knowledge Check</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="#ack">Acknowledgements</a>
       </li>
     </ul>
@@ -232,6 +235,52 @@
    	<br><br><br><br><br><br><br><br><br><br><br><br>
 	</div>
 </div> 
+<br>
+	
+
+<div class="games" id="knowl">
+    <div class="container">
+    <br><br><br>
+	<h3 style="text-align: center;"> Games! </h3> <br>
+    <p>Text Here about games</p> 
+    <div class = "row"> 
+		<div class = "col" style="border:3px solid DarkOrchid;text-align:center;">True or False:<br> AI's can lie to you
+		  <div style="text-align: center;"><button class="btn" id = "Q7T" style="background-color: DarkOrchid;" type="button" onclick="Q7TFunction()">True</button><button class="btn" id="Q7F" style="background-color: DarkOrchid;" type="button" onclick="Q7FFunction()">False</button></div>
+		  <p id = "Q7p"> </p>
+		</div>
+
+		<div class = "col" style="border:3px solid DodgerBlue;text-align:center;">Where did this quote come from: MyAI or The Office?<br> "We need a new plague."
+		  <div style="text-align: center;"><button class="btn" style="background-color: DodgerBlue;" type="button" onclick="Q8TFunction()">MyAI</button><button class="btn" style="background-color: DodgerBlue;" type="button" onclick="Q8FFunction()">The Office</button></div>
+		  <p id = "Q8p"> </p>
+		</div>
+
+		<div class = "col" style="border:3px solid Gold;text-align:center;">General AI Question:<br> What does "intelligence" usually refer to in Artificial Intelligence?
+		  <div style="text-align: center;"><button class="btn" style="background-color: Gold;" type="button" onclick="Q9TFunction()">Human-Like Behavior</button><button class="btn" style="background-color: Gold;" type="button" onclick="Q9FFunction()">Vast Knowledge of Many Topics</button></div>
+		  <p id = "Q9p"> </p>
+		</div>
+
+	</div>
+	<br>
+	<script>
+		function Q7TFunction() { 
+		  document.getElementById("Q7p").innerHTML = "True is not correct. Try again!";
+		}
+		function Q7FFunction() {
+			document.getElementById("Q7p").innerHTML = "False is correct!"
+		}
+		function Q8TFunction() { 
+		  document.getElementById("Q8p").innerHTML = "MyAI is not correct. Try again!";
+		}
+		function Q8FFunction() {
+			document.getElementById("Q8p").innerHTML = "The Office is correct!"
+		}
+		function Q9TFunction() { 
+		  document.getElementById("Q9p").innerHTML = "That is correct!";
+		}
+		function Q9FFunction() {
+			document.getElementById("Q9p").innerHTML = "That is not correct. Try again!"
+		}
+	</script>
 
   
 <div class="container" id="ack">
